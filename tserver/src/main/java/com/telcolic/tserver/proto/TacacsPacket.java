@@ -1,4 +1,4 @@
-package oldproto.tacacs.proto;
+package com.telcolic.tserver.proto;
 
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
@@ -6,7 +6,7 @@ import java.io.Serializable;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 
-import oldproto.tacacs.Bytes;
+import com.telcolic.tserver.Bytes;
 
 import io.netty.buffer.ByteBuf;
 import io.netty.buffer.UnpooledByteBufAllocator;

@@ -1,4 +1,4 @@
-package oldproto.tacacs;
+package com.telcolic.tserver;
 
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
@@ -17,9 +17,9 @@ import io.netty.channel.Channel;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.ChannelInboundHandlerAdapter;
 
-public class TacacsServerHandler extends ChannelInboundHandlerAdapter {
+public class TacacsServerHandler2 extends ChannelInboundHandlerAdapter {
 
-	private Logger log = LoggerFactory.getLogger(TacacsServer.class);
+	private Logger log = LoggerFactory.getLogger(TacacsServerHandler2.class);
 	private List<Channel> list = new ArrayList<Channel>();
 
 	@Override
