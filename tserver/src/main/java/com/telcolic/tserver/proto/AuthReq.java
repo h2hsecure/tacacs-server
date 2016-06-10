@@ -1,4 +1,4 @@
-package com.telcolic.tserver.com.telcolic.tserver.proto;
+package com.telcolic.tserver.proto;
 
 import java.io.Serializable;
 

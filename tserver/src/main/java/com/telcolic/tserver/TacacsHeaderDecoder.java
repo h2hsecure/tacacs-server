@@ -1,6 +1,6 @@
 package com.telcolic.tserver;
 
-import com.telcolic.tserver.com.telcolic.tserver.proto.TacacsHeader;
+import com.telcolic.tserver.proto.TacacsHeader;
 import io.netty.buffer.ByteBuf;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.handler.codec.ByteToMessageDecoder;

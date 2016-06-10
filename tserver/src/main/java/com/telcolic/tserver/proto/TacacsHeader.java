@@ -1,4 +1,4 @@
-package com.telcolic.tserver.com.telcolic.tserver.proto;
+package com.telcolic.tserver.proto;
 
 import io.netty.buffer.ByteBuf;
 import io.netty.buffer.Unpooled;
@@ -96,7 +96,7 @@ public class TacacsHeader {
                 baos.write(pad);
             baos.write(lastPad);
             pad = baos.toByteArray();
-            if (pad.length > body.length)
+            if (pad.length > body.capacity())
                 keepLoop = false;
         }
         int i = 0;
