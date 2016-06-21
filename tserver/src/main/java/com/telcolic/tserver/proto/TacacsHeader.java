@@ -26,7 +26,21 @@ import java.security.NoSuchAlgorithmException;
      +----------------+----------------+----------------+----------------+
  */
 public class TacacsHeader {
+    //Version
     public static final byte TAC_PLUS_MAJOR_VER = (byte)0xc0;
+    public static final byte TAC_PLUS_MINOR_VER_DEFAULT      = (byte)0x0;
+    public static final byte TAC_PLUS_MINOR_VER_ONE          = (byte)0x1;
+
+    //Types
+    public static final byte TAC_PLUS_AUTHEN = 0x01; //(Authentication)
+    public static final byte TAC_PLUS_AUTHOR = 0x02; //(Authorization)
+    public static final byte TAC_PLUS_ACCT   = 0x03; //(Accounting)
+
+    //Flags
+    public static final byte TAC_PLUS_UNENCRYPTED_FLAG = 0x01;
+    public static final byte TAC_PLUS_SINGLE_CONNECT_FLAG = 0x04;
+
+
     public static final byte SIZE_OF = 0xc;
     public static final int MAX_SIZE = 0x100;
     private static final byte HEADERFLAG_NO_ENCRYPT = 0x1;

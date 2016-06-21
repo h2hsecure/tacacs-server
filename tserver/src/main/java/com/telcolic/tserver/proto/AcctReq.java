@@ -1,5 +1,7 @@
 package com.telcolic.tserver.proto;
 
+import java.io.Serializable;
+
 /**
  * Created by h2e on 15/06/16.
  *
@@ -29,5 +31,9 @@ package com.telcolic.tserver.proto;
  +----------------+----------------+----------------+----------------+
 
  */
-public class AcctReq {
+public class AcctReq implements Serializable {
+    public static final byte TAC_PLUS_ACCT_FLAG_MORE     = 0x01; //(deprecated)
+    public static final byte TAC_PLUS_ACCT_FLAG_START    = 0x02;
+    public static final byte TAC_PLUS_ACCT_FLAG_STOP     = 0x04;
+    public static final byte TAC_PLUS_ACCT_FLAG_WATCHDOG = 0x08;
 }

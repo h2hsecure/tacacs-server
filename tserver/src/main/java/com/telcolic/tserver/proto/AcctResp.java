@@ -17,4 +17,8 @@ package com.telcolic.tserver.proto;
  +----------------+
  */
 public class AcctResp {
+    //Status
+    public static final byte TAC_PLUS_ACCT_STATUS_SUCCESS    = 0x01;
+    public static final byte TAC_PLUS_ACCT_STATUS_ERROR      = 0x02;
+    public static final byte TAC_PLUS_ACCT_STATUS_FOLLOW     = 0x21;
 }

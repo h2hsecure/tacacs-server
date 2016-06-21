@@ -28,4 +28,10 @@ package com.telcolic.tserver.proto;
  +----------------+----------------+----------------+----------------+
  */
 public class AuthzResp {
+    // Status
+    public static final byte TAC_PLUS_AUTHOR_STATUS_PASS_ADD  = 0x01;
+    public static final byte TAC_PLUS_AUTHOR_STATUS_PASS_REPL = 0x02;
+    public static final byte TAC_PLUS_AUTHOR_STATUS_FAIL      = 0x10;
+    public static final byte TAC_PLUS_AUTHOR_STATUS_ERROR     = 0x11;
+    public static final byte TAC_PLUS_AUTHOR_STATUS_FOLLOW    = 0x21;
 }

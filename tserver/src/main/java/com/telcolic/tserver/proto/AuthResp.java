@@ -28,4 +28,19 @@ package com.telcolic.tserver.proto;
  +----------------+----------------+
  */
 public class AuthResp {
+    // Status
+    public static final byte TAC_PLUS_AUTHEN_STATUS_PASS     = 0x01;
+    public static final byte TAC_PLUS_AUTHEN_STATUS_FAIL     = 0x02;
+    public static final byte TAC_PLUS_AUTHEN_STATUS_GETDATA  = 0x03;
+    public static final byte  TAC_PLUS_AUTHEN_STATUS_GETUSER  = 0x04;
+    public static final byte TAC_PLUS_AUTHEN_STATUS_GETPASS  = 0x05;
+    public static final byte TAC_PLUS_AUTHEN_STATUS_RESTART  = 0x06;
+    public static final byte TAC_PLUS_AUTHEN_STATUS_ERROR    = 0x07;
+    public static final byte TAC_PLUS_AUTHEN_STATUS_FOLLOW   = 0x21;
+
+    //Flags
+    public static final byte TAC_PLUS_REPLY_FLAG_NOECHO      = 0x01;
+    public static final byte TAC_PLUS_CONTINUE_FLAG_ABORT    = 0x01;
+
+
 }
