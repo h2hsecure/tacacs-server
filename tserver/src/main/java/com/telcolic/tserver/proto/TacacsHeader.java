@@ -11,6 +11,19 @@ import java.security.NoSuchAlgorithmException;
 
 /**
  * Created by hekemen on 5/21/16.
+ *
+ *   1 2 3 4 5 6 7 8  1 2 3 4 5 6 7 8  1 2 3 4 5 6 7 8  1 2 3 4 5 6 7 8
+
+     +----------------+----------------+----------------+----------------+
+     |major  | minor  |                |                |                |
+     |version| version|      type      |     seq_no     |   flags        |
+     +----------------+----------------+----------------+----------------+
+     |                                                                   |
+     |                            session_id                             |
+     +----------------+----------------+----------------+----------------+
+     |                                                                   |
+     |                              length                               |
+     +----------------+----------------+----------------+----------------+
  */
 public class TacacsHeader {
     public static final byte TAC_PLUS_MAJOR_VER = (byte)0xc0;
