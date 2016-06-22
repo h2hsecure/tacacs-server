@@ -22,4 +22,8 @@ public class HsqlAdapter implements NasAdapter, SessionAdapter, UserAdapter {
             e.printStackTrace();
         }
     }
+
+    public int findNas(String name) {
+        return 0;
+    }
 }
